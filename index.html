@@ -14,6 +14,8 @@
   </head>
 
   <body> 
+      <!--  Hamburger with a dropdown menu  -->
+
      <nav role="navigation">
         <div id="menuToggle" onclick="toggleMenu()">
           <input type="checkbox">
@@ -22,12 +24,7 @@
           <span></span>
           <span></span>
 
-          <ul id="menu" class="hidden">
-            <!--li><a href="#home">Home</a><li>
-            <li><a href="#myStory">About Me</a></li>
-            <li><a href="#myServices">My Services</a></li>
-            <li><a href="#work">Projects</a></li>
-            <li><a href="#contact">Contact</a></li-->
+          <ul id="menu" class="hidden">            
               <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#myStory" onclick="toggleMenu()">About Me</a></li>
                 <li><a href="#myServices" onclick="toggleMenu()">My Services</a></li>
@@ -37,9 +34,9 @@
         </div>
       </nav> 
       
-      <script src="script.js"></script>  
-
-      <section class="about-me" id="home">    
+      <script src="script.js"></script>       
+      
+    <section class="about-me" id="home">    
         <div class="me">       
           <h1 class="section-title-intro" id="home"><strong>Ricardo Weiss</strong></h1>
             <p class="section-subtitle-intro">web developer</p>
@@ -50,9 +47,11 @@
             <img src="./images/Richi.jpg" class="section-image" alt="Ricardo smiling into camera">
         </div>
         <p class="section-info-about">"Passionate front-end developer. Eager to create exceptional digital experiences."</p>
-        </section>
+    </section>
+
+          <!-- my story section -->
       
-      <section class="my-story" id="myStory">
+    <section class="my-story" id="myStory">
         <div class="about-me-body">
           <h2 class="section-title-about">and this is my story</h2>
 
@@ -64,9 +63,11 @@
               
             <p>Now, armed with a solid foundation in coding and a burning passion for the field, I am determined to transition into the tech industry. I am excited to leverage my previous experiences in a new realm, bringing a fresh perspective, adaptability, and a strong work ethic. My journey from the food and beverage industry to pursuing a career in tech is driven by a deep-rooted desire for personal and professional growth, along with the pursuit of a fulfilling and balanced lifestyle for myself and my family.</p>
           </div>
-      </section>
+    </section>
 
-      <section class="skills" id="myServices">
+           <!--  my skills  -->
+
+    <section class="skills" id="myServices">
         <div class="#">
         <h5 class="section-title-skills">what I do</h5>
         </div>
@@ -96,45 +97,55 @@
           <div class="skills-container-box">
                 <img src="./images/netlify-icon.png" class="netlify-icon">
                 <h4>Netlify</h4>
-          </div>
-          <!--<div class="skills-container-box">
-            <i class="fab fa-npm">
-            <h4>NPM</h4>
-          </div>
-          <div class="skills-container-box">
-            <i class="fab fa-figma">
-            <h4>Figma</h4>
-      </div> -->
-        </div>
-      </section>
+          </div>          
+       </div>
+    </section>
 
-      <section class="my-work" id="work" >
+               <!--  my projects  -->
+
+    <section class="my-work" id="work" >
         <h2 class="section-title">some of my projects</h2>
          
-        <div class="portfolio">
-          <a href="https://bertlstravels.netlify.app/" class="portfolio-item">
-            <img class="portfolio-img" src="images/travelJournal.png">            
-          </a>          
+      <div class="portfolio">
+          <div class="project">
+            <img src="images/KittieKounterpic.png" class="portfolio-img" alt="Project Thumbnail">
+          <div class="buttons">
+            <a href="https://github.com/Bertl-81W/Kittie-Kounter.git" class="btn">View Code</a>
+            <a href="https://tonsofkisses.netlify.app/" class="btn">View Website</a>
+          </div>          
+        </div>
 
-          <a href="https://tonsofkisses.netlify.app/" class="portfolio-item">
-            <img class="portfolio-img" src="images/KittieKounterpic.png">
-          </a>   
-          
-          <a href="https://animation-quizzical.netlify.app/" class="portfolio-item">
-            <img class="portfolio-img" src="images/anim-quiz.png">
-          </a> 
+        <div class="project">
+          <img src="images/travelJournal.png" class="portfolio-img" alt="Project Thumbnail">
+          <div class="buttons">
+            <a href="https://github.com/Bertl-81W/react-app-bertls-travels.git" class="btn">View Code</a>
+            <a href="https://bertlstravels.netlify.app/" class="btn">View Website</a>
+          </div>
+        </div>  
 
-          <a href="https://devricardoweiss.netlify.app/" class="portfolio-item">
-            <img class="portfolio-img" src="images/portf-pic.png">
-          </a> 
+        <div class="project">
+            <img src="images/anim-quiz.png" class="portfolio-img" alt="Project Thumbnail">
+          <div class="buttons">
+            <a href="https://github.com/Bertl-81W/quizzical-app.git" class="btn">View Code</a>
+            <a href="https://animation-quizzical.netlify.app/" class="btn">View Website</a>
+          </div>
+        </div> 
 
-        </div>     
-      </section>
+        <div class="project">
+            <img src="images/portf-pic.png" class="portfolio-img" alt="Project Thumbnail">
+          <div class="buttons">
+            <a href="https://github.com/Bertl-81W/myPortfolio.git" class="btn">View Code</a>
+            <a href="https://devricardoweiss.netlify.app/" class="btn">View Website</a>
+          </div>
+        </div> 
+      </div>     
+    </section>
+
+             <!--  my contact info  -->
 
     <section class="contact-info" id="contact">
       <div class="contact-info-link">
         <h3>Get in touch</h3>
-
         <div class="icons">
             <ul class="social-list">
                 <li class="social-list-item">
@@ -161,14 +172,13 @@
           <button class="mailButton">LET'S CHAT</button>
          </a>
       </div>
-      
-          
-      </section>
+
+               <!--  footer  -->
+
+    </section>
       <footer>
         <p class="call-sign"id="trademark">created by Bertl-81W</p> 
-      </footer>       
-          
-  </body>
-  
+      </footer>           
+  </body> 
 </html>
   
