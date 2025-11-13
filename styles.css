@@ -84,10 +84,10 @@ p {
 .section-image {
     border: 2px solid #343a40;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     margin-left: 850px; 
-    margin-top: -160px;    
+    margin-bottom: -160px;    /*top: -120px */
 } 
 
    /*skills*/
@@ -420,6 +420,9 @@ a:hover {
   }
   .section-subtitle-about{
     font-size: 15px;    
+  }
+  .about-me {
+    width: 75%;
   }
   .skills {
     width: 80%;
