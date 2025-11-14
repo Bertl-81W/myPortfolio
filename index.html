@@ -118,7 +118,6 @@
         <div class="project">
             <img src="images/clientSite_1.png" class="portfolio-img" alt="Project Thumbnail">
           <div class="buttons">
-            <!--a href="https://github.com/Bertl-81W/quizzical-app.git" class="btn">View Code</a>-->
             <a href="https://nutritionbyheather.com/" class="btn">View Site</a>
           </div>
         </div>
@@ -174,16 +173,20 @@
                      </a>
                  </li>
             </ul>
-        </div> 
-         <h3>if you would like to work together</h3>        
-         <a href="mailto:ricardoweiss1012@gmail.com">
-          <button class="mailButton">Send a Raven</button>
-         </a>
-      </div>
+        </div>
+            <section class="contact-form" id="contact">
+              <h3>let's create together</h3>
+              <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+                <button type="submit" class="mailButton">Send a Raven</button>
+              </form>
+            </section>
 
                <!--  footer  -->
-
-    </section>
+          </section>
       <footer>
         <p class="call-sign"id="trademark">designed with ♡ by Bertl-81W</p> 
       </footer>           
