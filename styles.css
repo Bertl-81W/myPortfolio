@@ -203,20 +203,23 @@ h4 {
 
 .contact-form {
   background-color: grey;;
-  
-}   
-
-.contact-info {
-    background-color: #ffff;
+  max-width: 100%;
+} 
+.contact-form input,
+.contact-form textarea {
+  width: 75%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
 }
-.contact-info-link {
-    text-align: center;    
-}
-.mailButton{
-    padding: 10px 30px;
-    font-size: 20px;
-    border-radius: 35px;
-    border: 2px solid #000 ;
+.contact-form .mailButton {
+  margin-top: 1.5rem;            
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
 }
 .mailButton:hover,
 .mailButton:focus {
@@ -224,6 +227,12 @@ h4 {
     color: pink;
     cursor: pointer;
     transform: scale(1.2);    
+}
+.contact-info {
+    background-color: #ffff;
+}
+.contact-info-link {
+    text-align: center;    
 }
 .social-list {
     display: flex;
@@ -281,8 +290,8 @@ a:hover {
   top: -7px;
   left: -5px;  
   cursor: pointer;  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */  
+  opacity: 0; 
+  z-index: 2;   
   -webkit-touch-callout: none;
 } 
 #menuToggle span {
