@@ -100,8 +100,7 @@ p {
 .skills-container {    
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;    
     text-align: center;
 }
 
@@ -401,10 +400,14 @@ footer {
  }
  .skills{
   width: 90%;
- }
- 
+ } 
  .skills-container-box{
   margin-left: 10px;
+  height: 135px;  
+}
+.portfolio-img{
+  height: 180px;
+  width: 200px;
 }
  .section-title-about{
     margin-bottom: 10px;
@@ -413,7 +416,6 @@ footer {
     width: 100%;
  }
 } 
-
 
 @media screen and (max-width: 500px){
   body{    
@@ -449,9 +451,12 @@ footer {
     width: 190px;
     border: 2px solid black;
   } 
-  /*.buttons {
-    
-  }*/
+  .skills-container-box {
+    height: 145px;
+    width: 145px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }  
   .social-list-link{
     display: flex;
     flex-direction: row;
